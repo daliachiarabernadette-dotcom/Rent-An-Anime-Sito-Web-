@@ -1,0 +1,562 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333447;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 100%;
+    color: #000000;
+    border-radius: 20px;
+    background-color: #f58affa4;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h5 {
+    font-size: 100%;
+    color: #000000;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    background-color: #f58affa4;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    position: relative;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.row [class^="col"] {
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+}
+
+.col-1 {
+    width: 4.33%;
+}
+
+.col-2 {
+    width: 12.66%;
+}
+
+.col-3 {
+    width: 21%;
+}
+
+.col-4 {
+    width: 29.33%;
+}
+
+.col-5 {
+    width: 37.66%;
+}
+
+.col-6 {
+    width: 46%;
+}
+
+.col-7 {
+    width: 54.33%;
+}
+
+.col-8 {
+    width: 62.66%;
+}
+
+.col-9 {
+    width: 71%;
+}
+
+.col-10 {
+    width: 79.33%;
+}
+
+.col-11 {
+    width: 87.66%;
+}
+
+.col-12 {
+    width: 96%;
+}
+
+/* Stili per il pulsante */
+.pulsante {
+    background-color: #f58aff;
+    /* Colore di sfondo */
+    color: black;
+    /* Colore del testo */
+    padding: 10px 20px;
+    /* Spazio interno */
+    border: none;
+    /* Rimuove il bordo */
+    border-radius: 5px;
+    /* Bordi arrotondati */
+    cursor: pointer;
+    /* Cambia il cursore al passaggio sopra il pulsante */
+    font-size: 16px;
+    /* Dimensione del carattere */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombra */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    /* Effetti di transizione */
+    margin-right: 10px;
+    /* Margine a destra tra i pulsanti */
+    margin-bottom: 10px;
+    /* Margine in basso tra i pulsanti */
+}
+
+/* Effetto hover */
+.pulsante:hover {
+    background-color: #dc60e7;
+    /* Cambia il colore di sfondo al passaggio del mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Cambia l'ombra al passaggio del mouse */
+    transform: scale(1.1);
+}
+
+/* Stili per il contenitore del paragrafo */
+.contenitore {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+/* Stili per il paragrafo */
+.paragrafo {
+    font-size: 30px;
+    /* Dimensione del carattere */
+    background-color: #0000002d;
+    /* Colore di sfondo */
+    color: black;
+    /* Colore del testo */
+    padding: 8px;
+    /* Spazio interno */
+    height: 100px;
+}
+
+div.title {
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+div.title img:hover {
+    transform: scale(1.1);
+}
+
+a.title {
+    font-size: 100%;
+    font-weight: bold;
+    margin: 1%;
+    text-decoration: none;
+}
+
+.riquadro-1 {
+    background-color: #00000052;
+    color: black;
+    padding: 8px;
+    height: 450px;
+    border-radius: 50px;
+    margin: 2px;
+    perspective: 1000px;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+.schermo-nero {
+    background-color: black;
+    padding: 20px;
+}
+
+.annunci {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0000002d;
+    box-shadow: 0 4px 8px #f58aff;
+    color: #f58aff;
+    padding: 8px;
+    height: 50px;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.riquadro-genere {
+    font-size: 100%;
+    color: #000000;
+    border-radius: 20px;
+    background-color: #f58aff;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.riquadro-genere:hover {
+    font-size: 100%;
+    color: #000000;
+    border-radius: 20px;
+    background-color: #dc60e7;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px #0000001a;
+    transform: scale(1.02);
+}
+
+.riquadro-lista {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    background-color: #f58aff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.riquadro-lista:hover {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    background-color: #dc60e7;
+    padding: 5px 10px;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 5px;
+    box-shadow: 0 6px 12px #0000001a;
+}
+
+.riquadro {
+    border-radius: 20px;
+    background-color: #00000052;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.riquadro-ricerca {
+    background-color: #f58aff;
+    box-shadow: 0 4px 8px #0000001a;
+    height: 47px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.pulsante-ricerca {
+    font-family: Georgia, serif;
+    background-color: #f58aff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pulsante-ricerca:hover {
+    background-color: #dc60e7;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffccff;
+    /* colore di sfondo per evidenziare l'area */
+    padding: 10px;
+}
+
+.carrello-link {
+    float: right;
+}
+
+.scelta {
+    float: center;
+}
+
+.riquadro-footer {
+    font-family: Georgia, serif;
+    background-color: #f58aff;
+    box-shadow: 0 4px 8px #0000001a;
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid #f58aff;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #f58aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: -4px;
+    /* Per allineare perfettamente il pulsante con la casella di testo */
+}
+
+/* Stile per il pulsante quando viene premuto */
+.search-button:active {
+    background-color: #d77bff;
+}
+
+.spedizione-select {
+    padding: 8px 12px;
+    /* Aggiungi spazio intorno al testo */
+    font-size: 16px;
+    /* Dimensione del testo */
+    border: 1px solid #000000;
+    /* Aggiungi un bordo grigio */
+    border-radius: 5px;
+    /* Bordi arrotondati */
+    background-color: #f58aff;
+    /* Sfondo color magenta */
+    color: #000000;
+    /* Testo bianco */
+    width: 230px;
+    /* Larghezza del menu a tendina */
+}
+
+/* Stile per le opzioni nel menu a tendina */
+.spedizione-select option {
+    padding: 8px 12px;
+    /* Aggiungi spazio intorno al testo */
+    font-size: 16px;
+    /* Dimensione del testo */
+    background-color: #f58aff;
+    /* Sfondo color magenta */
+    color: #000000;
+    /* Testo bianco */
+}
+
+/* Stile quando il menu a tendina è attivo */
+.spedizione-select:focus {
+    outline: none;
+    /* Rimuovi l'outline */
+    box-shadow: 0 0 5px rgb(71, 71, 71);
+    /* Aggiungi un'ombra azzurra */
+}
+
+.table-styled {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    /* Combinare i bordi delle celle */
+    width: 80%;
+    /* Larghezza della tabella */
+    background-color: #e07fe962;
+    /* Sfondo trasparente */
+}
+
+/* Stile per le celle della tabella */
+.table-styled th,
+.table-styled td {
+    border: 1px solid #000000;
+    /* Aggiungi bordi color magenta */
+    padding: 8px;
+    /* Spazio interno */
+    text-align: center;
+    /* Allinea il testo a sinistra */
+    font-size: 20px;
+    color: white;
+    /* Testo bianco */
+}
+
+/* Stile per l'intestazione della tabella */
+.table-styled th {
+    background-color: #f58aff;
+    /* Sfondo color magenta */
+}
+
+.custom-input {
+    width: 40%;
+    /* Larghezza al 100% del contenitore, considerando il padding */
+    height: 28px;
+    padding: 8px;
+    /* Spazio interno */
+    border: 1px solid black;
+    /* Bordo nero */
+    background-color: #f58aff;
+    /* Sfondo color magenta */
+    color: rgb(0, 0, 0);
+    /* Testo nero */
+    box-sizing: border-box;
+    /* Considera il bordo e il padding nel calcolo della larghezza */
+    margin-bottom: 10px;
+    /* Spazio tra le aree di testo */
+}
+
+/* Nuova classe per il pulsante del form */
+.custom-button {
+    padding: 10px 20px;
+    background-color: #f58aff;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Stile per l'allineamento orizzontale degli input */
+.custom-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.custom-form-row .custom-form-column {
+    flex: 1;
+    min-width: 200px;
+    /* Larghezza minima */
+    max-width: 200px;
+    /* Larghezza massima per uniformità */
+}
+
+.video-wrapper {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.video-container {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.date-container {
+    background-color: #00000041;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #f58aff;
+    display: inline-block;
+}
+
+.date {
+    color: #f58aff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#clock {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f58aff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #00000041;
+    box-shadow: 0 4px 8px #f58aff;
+    display: inline-block;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.contorno {
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+td span {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.riquadro-footer img {
+    transition: transform 0.3s ease;
+}
+
+.riquadro-footer img:hover {
+    transform: scale(1.2);
+    /* Allarga l'immagine del 20% */
+}
+
+.login {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000002d;
+    box-shadow: 0 4px 8px #f58aff;
+    color: #f58aff;
+    padding: 8px;
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+}
